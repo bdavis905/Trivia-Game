@@ -1,51 +1,45 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<title>Brad's Trivia Game</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link rel="stylesheet" href="assets/css/style.css">
-	<script
-	  src="http://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
-	  crossorigin="anonymous">
-	 </script>
-	 <script src="assets/javascript/app.js"></script>
-	 </head>
 
-<body>
-
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="assets/css/reset.css" />
+		<link rel="stylesheet" type ="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<link rel="stylesheet" type="text/css" href="assets/css/style.css" />
+		<script
+  		src="http://code.jquery.com/jquery-3.3.1.js"
+  		integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+  		crossorigin="anonymous"></script>
+		<title>Brad's Trivia Game</title>
+	</head>
+	<body>
 <div class = "container">
-	<div class ="row">
-		<div class = "col">
-	       <img src="assets/images/trivia_icon.jpg" alt="Trivia">
-	   </div>
+	<div class = "row">
+		<div class = "text-center">	
+		<img src="assets/images/trivia_icon.jpg">
+		<div class="timer"></div>
+		<div id="mainArea">
+		<div class="question"></div>
+		<div class="answers"></div>
+		<div id="mainArea">
+			<div>
+				<button class="answerchoice" id="buttonA"><h4>A</h4></button>
+			</div>
+			<div>
+				<button class="answerchoice" id="buttonB"><h4>B</h4></button>
+			</div>
+			<div>
+				<button class="answerchoice" id="buttonC"><h4>C</h4></button>
+			</div>
+			<div>
+				<button class="answerchoice" id="buttonD"><h4>D</h4></button>
+			</div>
+		</div>
 	</div>
 </div>
-<div class = "container">
-	<div class= "row">
-		<div class = "col"><br><br>
-			<progress id="progressBar" value="0" max="100" style="width:300px; background: green;"></progress>
-  			<span id="status"></span>
-  			<h1 id="statusMessage"></h1>
-  		</div>
-  	</div>
-  </div>
-  
-  <!-- Add Button with event Click
-  with this event start your progressbar with your function -->
-  <div class = "container">
-  <div class = "row">
-  	<div class = "col">
-  		<button type="button" class ="btn btn-primary btn-lg center-block" onclick='start(0)'>Start Game</button>
-  	</div>
-  </div>
+</div>
 </div>
 
-  
+		<script src="assets/javascript/app.js"></script>
 
-
-
-<!--close container-->
-
-</body>
+	</body>
 </html>
